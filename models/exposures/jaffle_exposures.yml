@@ -1,0 +1,23 @@
+exposures:
+  - name: orders_data
+    type: dashboard
+    maturity: high
+    url: url
+    description: description
+    owner:
+      email: info@jaffleshop.com
+      name: BI Nerd A
+    depends_on:
+      - ref('orders')
+
+  - name: Customers_data
+    label: Customers_data
+    type: notebook
+    maturity: high
+    url: https://tinyurl.com/jaffle-shop-reporting
+    description: 'Exposure for customer metrics'
+    depends_on:
+      - ref('customers')
+    owner: 
+      name: Data Startrek
+      email: operations_manager@enterprise.com
