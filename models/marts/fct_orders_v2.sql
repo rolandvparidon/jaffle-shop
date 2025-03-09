@@ -13,7 +13,7 @@ final as (
         customer_name,
         location_name,
         tax_rate,
-        cast(opened_date as date) as location_opened_at,
+        cast(opened_date as date) as opened_date,
         date_part(month, ordered_at) as ordered_month,
         date_part(day, ordered_at) as ordered_day, 
         date_part(year, ordered_at) as ordered_year

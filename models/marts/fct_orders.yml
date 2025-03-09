@@ -41,7 +41,7 @@ models:
         columns:
             - name: order_amount
               data_type: number
-            - name: location_opened_at
+            - name: opened_date
               data_type: date
             - include: all
-              exclude: [order_total, opened_date]
+              exclude: [order_total]
