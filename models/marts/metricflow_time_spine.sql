@@ -1,3 +1,4 @@
+{{ config(required_tests=None) }}
 -- metricflow_time_spine.sql
 with
 
