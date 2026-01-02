@@ -15,8 +15,6 @@ test-paths: ["data-tests"]
 #seed-paths: ["seeds", "jaffle-data"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
-
-target-path: "target"
 clean-targets:
   - "target"
   - "dbt_packages"
@@ -31,8 +29,11 @@ seeds:
 models:
   jaffle_shop:
     # all models should have unique and not null
-    #+required_tests: {"unique.*|not_null": 2}
     staging:
       +materialized: view
+      +meta:
+        required_tests: {"unique.*|not_null": 2}
     marts:
       +materialized: table
+flags:
+  require_generic_test_arguments_property: true
