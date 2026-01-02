@@ -1,4 +1,6 @@
-{{ config(required_tests=None) }}
+{{ config(
+    meta={'required_tests': None}
+) }}
 -- metricflow_time_spine.sql
 with
 
