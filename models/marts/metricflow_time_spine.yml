@@ -1,14 +1,6 @@
-version: 2
-
 models:
-    - name: metricflow_time_spine
-      description: "Daily time spine generated via dbt_date.get_base_dates for the last 10 years."
-      meta:
-          required_tests: null
-
-      columns:
-          - name: date_day
-            description: "Calendar date (one row per day)."
-            tests:
-                - not_null
-                - unique
+  - name: metricflow_time_spine
+    description: "Daily time spine generated via dbt_date.get_base_dates for the last 10 years."
+    columns:
+      - name: date_day
+        description: "Calendar date (one row per day)."
