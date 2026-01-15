@@ -5,6 +5,13 @@ models:
       - dbt_utils.expression_is_true:
           arguments:
             expression: "lifetime_spend_pretax + lifetime_tax_paid = lifetime_spend"
+      # only compare some of the columns
+      - dbt_utils.equality:
+          arguments:
+            compare_model: ref('stg_customers')
+            compare_columns:
+              - customer_id
+              - customer_id
     columns:
       - name: customer_id
         description: The unique key of the orders mart.
