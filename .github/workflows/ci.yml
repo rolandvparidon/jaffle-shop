@@ -11,9 +11,9 @@ jobs:
     runs-on: macos-latest
 
     env:
-      DBT_ACCOUNT_ID: 188483
-      DBT_PROJECT_ID: 275557
-      DBT_PR_JOB_ID: 561096
+      DBT_ACCOUNT_ID: 70471823432270
+      DBT_PROJECT_ID: 70471823539980
+      DBT_PR_JOB_ID: 70471823548323
       DBT_API_KEY: ${{ secrets.DBT_CLOUD_API_KEY }}
       DBT_JOB_CAUSE: "GitHub Actions Request"
       DBT_JOB_BRANCH: ${{ github.head_ref }}
