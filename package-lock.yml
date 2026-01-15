@@ -7,8 +7,8 @@ packages:
     version: 0.10.0
   - git: https://github.com/dbt-labs/dbt-audit-helper.git
     name: audit_helper
-    revision: 15fb33745bbc63345145f4b0c2ccfdcad9c8951e
+    revision: acc7cad15a9a5cd0c2a928fafb888cffd135790e
   - name: dbt_meta_testing
     package: tnightengale/dbt_meta_testing
     version: 0.3.6
-sha1_hash: d0770f71ba879a89ad9768d47479d6146c21de82
+sha1_hash: 33eb7392e444f05b30979de2eea9012030b84c9f
