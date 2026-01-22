@@ -1,0 +1,8 @@
+{% test smaller_then(model, column_name) %}
+
+    select 
+        {{ column_name  }}
+    from {{ model }} 
+    where {{ column_name }} <= 0.1
+
+{% endtest %}

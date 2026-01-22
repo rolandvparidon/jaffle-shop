@@ -27,6 +27,10 @@ models:
         description: The timestamp the order was placed at.
       - name: order_cost
         description: The sum of supply expenses to fulfill the order.
+        data_tests:
+          - smaller_then
+          - average_dollars_spent_greater_than_one:
+              group_by_column: customer_id
       - name: is_food_order
         description: A boolean indicating if this order included any food items.
       - name: is_drink_order
