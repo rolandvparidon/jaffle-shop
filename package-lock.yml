@@ -11,4 +11,7 @@ packages:
   - name: dbt_meta_testing
     package: tnightengale/dbt_meta_testing
     version: 0.3.6
-sha1_hash: 33eb7392e444f05b30979de2eea9012030b84c9f
+  - name: dbt_expectations
+    package: metaplane/dbt_expectations
+    version: 0.10.9
+sha1_hash: f26d1091baffd4c1e81f146caa276ba54e9fbbba

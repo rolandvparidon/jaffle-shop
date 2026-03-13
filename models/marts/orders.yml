@@ -23,6 +23,12 @@ models:
                 field: customer_id
       - name: order_total
         description: The total amount of the order in USD including tax.
+        data_tests:
+         - dbt_expectations.expect_column_values_to_be_between:
+            min_value: 0  # (Optional)
+            max_value: 1000 # (Optional)
+            strictly: false # (Optional. Default is 'false'. Adds an 'or equal to' to the comparison operator for min/max)
+
       - name: ordered_at
         description: The timestamp the order was placed at.
       - name: order_cost
