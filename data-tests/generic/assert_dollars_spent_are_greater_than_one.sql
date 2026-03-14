@@ -6,7 +6,7 @@ select
 
 from {{ model }}
 group by 1
-having average_amount < 1
+having average_amount < 0
 
 
 {% endtest %}

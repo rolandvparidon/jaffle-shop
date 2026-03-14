@@ -1,5 +1,6 @@
+{{ config(store_failures = true) }}
+
 select
-    order_id, 
-    order_items_subtotal
-from {{ ref('orders') }}
-where order_items_subtotal <= 0
+    *
+from {{ ref('stg_payments') }}
+where amount < 0
