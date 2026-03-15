@@ -9,19 +9,19 @@ order_items as (
 
 orders as (
 
-    select * from {{ ref('stg_orders') }}
+    select * from {{ ref('stg_jaffle_shop__orders') }}
 
 ),
 
 products as (
 
-    select * from {{ ref('stg_products') }}
+    select * from {{ ref('stg_jaffle_shop__products') }}
 
 ),
 
 supplies as (
 
-    select * from {{ ref('stg_supplies') }}
+    select * from {{ ref('stg_jaffle_shop__supplies') }}
 
 ),
 
