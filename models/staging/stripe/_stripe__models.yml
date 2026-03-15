@@ -1,0 +1,10 @@
+models:
+    - name: stg_stripe__payments
+      columns:
+        - name: payment_id
+          tests:
+            - unique:
+                config:
+                  severity: Error
+                  warn_if: ">10"
+                  error_if: ">100"

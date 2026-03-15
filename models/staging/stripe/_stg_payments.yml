@@ -1,8 +1,0 @@
-models:
-    - name: id
-      tests:
-        - unique:
-            config:
-              severity: Error
-              warn_if: ">100"
-              error_if: ">10"
