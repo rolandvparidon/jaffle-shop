@@ -5,13 +5,13 @@ packages:
   - name: dbt_date
     package: godatadriven/dbt_date
     version: 0.10.0
-  - git: https://github.com/dbt-labs/dbt-audit-helper.git
-    name: audit_helper
-    revision: acc7cad15a9a5cd0c2a928fafb888cffd135790e
   - name: dbt_meta_testing
     package: tnightengale/dbt_meta_testing
     version: 0.3.6
   - name: dbt_expectations
     package: metaplane/dbt_expectations
     version: 0.10.9
-sha1_hash: f26d1091baffd4c1e81f146caa276ba54e9fbbba
+  - name: audit_helper
+    package: dbt-labs/audit_helper
+    version: 0.12.2
+sha1_hash: ff251360e89cfb5307cb8f2e7d868ead1598ba68
