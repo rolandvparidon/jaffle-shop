@@ -1,0 +1,12 @@
+models:
+  - name: dim_customers
+    description: Customers dimensions. One row per customer id.
+    columns:
+      - name: customer_id
+        description: The unique key of the customers dimension.
+        data_tests:
+          - not_null
+          - unique
+      - name: customer_name
+        description: Customers' full name.
+      
