@@ -8,7 +8,7 @@ models:
       # only compare some of the columns
       - dbt_utils.equality:
           arguments:
-            compare_model: ref('stg_customers')
+            compare_model: ref('stg_jaffle_shop__customers')
             compare_columns:
               - customer_id
               - customer_id
@@ -21,7 +21,7 @@ models:
           - dbt_utils.cardinality_equality:
               arguments:
                 field: customer_id
-                to: ref('stg_customers')
+                to: ref('stg_jaffle_shop__customers')
       - name: customer_name
         description: Customers' full name.
       - name: count_lifetime_orders

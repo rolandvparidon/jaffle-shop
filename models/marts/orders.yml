@@ -19,7 +19,7 @@ models:
         data_tests:
           - relationships:
               arguments:
-                to: ref('stg_customers')
+                to: ref('stg_jaffle_shop__customers')
                 field: customer_id
       - name: order_total
         description: The total amount of the order in USD including tax.
@@ -53,7 +53,7 @@ unit_tests:
           - {order_id: 1, order_item_id: 1, is_drink_item: false, is_food_item: true}
           - {order_id: 1, order_item_id: 2, is_drink_item: true, is_food_item: false}
           - {order_id: 2, order_item_id: 3, is_drink_item: false, is_food_item: true}
-      - input: ref('stg_orders')
+      - input: ref('stg_jaffle_shop__orders')
         rows:
           - {order_id: 1}
           - {order_id: 2}
