@@ -5,15 +5,10 @@
     {% if node.resource_type == 'seed' %}
         {{ custom_schema_name | trim }}
 
-    {% elif custom_schema_name is none %}
-        {{ default_schema }}
-
-    {% elif env_var('DBT_MY_ENV', '') == 'prod' %}
-        {{ custom_schema_name | trim }} 
-
+    {% elif target.schema == 'Production' %}
+        {{ custom_schema_name | trim }}
     {% else %}
         {{ default_schema }}_{{ custom_schema_name | trim }}
-
     {% endif %}
 
 {% endmacro %}
