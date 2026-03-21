@@ -1,0 +1,8 @@
+models:
+  - name: metricflow_time_spine
+    description: Time spine table for MetricFlow — generates one row per day for a 10 year period. Required by the dbt Semantic Layer for time-based metric calculations.
+    config:
+      materialized: table
+    columns:
+      - name: date_day
+        description: One row per calendar day, cast as DATE. Used as the primary time dimension by MetricFlow.
