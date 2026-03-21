@@ -12,7 +12,7 @@
         {{ custom_schema_name | trim }} 
 
     {% else %}
-        {{ default_schema }}_{{ custom_schema_name | trim }}  ← prefixed in dev
+        {{ default_schema }}_{{ custom_schema_name | trim }}
 
     {% endif %}
 
