@@ -7,10 +7,15 @@ target/
 dbt_packages/
 logs/
 profiles.yml
-
+dbt_cloud.yml
 .DS_Store
 
 .user.yml
 
 .ruff_cache
 __pycache__
+dbt_internal_packages/
+
+# Service account credentials
+*.json
+dbt-labs-483519-*.json
